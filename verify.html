@@ -91,39 +91,3 @@
     </script>
 </body>
 </html>
-
-            <!-- نتيجة التحقق (تظهر عند البحث) -->
-            <div id="resultBox" class="mt-8 hidden border-t pt-6">
-                <div class="bg-green-50 border border-green-200 rounded-lg p-4 mb-4 text-center">
-                    <span class="text-green-800 font-bold text-lg">✅ وثيقة رسمية معتمدة وصحيحة</span>
-                </div>
-                <div class="space-y-3 text-sm">
-                    <div class="flex justify-between border-b pb-2"><span class="text-gray-500">اسم الطالب:</span> <span class="font-bold" id="studentName">عثمان فهد عمر</span></div>
-                    <div class="flex justify-between border-b pb-2"><span class="text-gray-500">البرنامج / الدورة:</span> <span class="font-bold" id="courseName">دورة المهارات الرقمية والذكاء الاصطناعي</span></div>
-                    <div class="flex justify-between border-b pb-2"><span class="text-gray-500">مدة البرنامج:</span> <span class="font-bold">6 أشهر (150 ساعة تدريبية)</span></div>
-                    <div class="flex justify-between border-b pb-2"><span class="text-gray-500">تاريخ الإصدار:</span> <span class="font-bold">30/07/2026</span></div>
-                    <div class="flex justify-between"><span class="text-gray-500">الاعتماد:</span> <span class="font-bold text-blue-900">جامعة الزهراء & OFK Academy</span></div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- التذييل -->
-    <footer class="text-center py-6 text-xs text-gray-400">
-        جميع الحقوق محفوظة © 2026 - أكاديمية أوفك بالشراكة مع جامعة الزهراء
-    </footer>
-
-    <!-- كود بسيط لتجربة العرض التفاعلي -->
-    <script>
-        function verifyCertificate() {
-            const inputVal = document.getElementById('certInput').value.trim();
-            const resultBox = document.getElementById('resultBox');
-            if(inputVal !== "") {
-                resultBox.classList.remove('hidden');
-            } else {
-                alert('الرجاء إدخال رقم الشهادة المتسلسل أولاً');
-            }
-        }
-    </script>
-</body>
-</html>
